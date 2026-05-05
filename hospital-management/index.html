@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediCare Pro</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark bg-primary">
+        <div class="container">
+            <span class="navbar-brand">MediCare Pro Hospital</span>
+            <a href="admin.html" class="btn btn-light btn-sm">Admin</a>
+        </div>
+    </nav>
+    <!-- HERO BACKGROUND SLIDER -->
+    <div id="heroSlider" class="carousel slide carousel-fade" data-bs-ride="carousel">
+
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <img src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3" class="d-block w-100 hero-img">
+                <div class="carousel-caption hero-caption">
+                    <h1>Your Health, Our Priority</h1>
+                    <p>Advanced Care With Compassion & Technology</p>
+                    <a href="#appointment" class="btn btn-primary">Book Appointment</a>
+                </div>
+            </div>
+
+            <div class="carousel-item">
+                <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118" class="d-block w-100 hero-img">
+                <div class="carousel-caption hero-caption">
+                    <h1>24/7 Emergency Services</h1>
+                    <p>Professional Doctors & Modern Equipment</p>
+                    <a href="#appointment" class="btn btn-light">Contact Now</a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!-- DOCTORS SECTION -->
+    <section class="container my-5">
+        <h2 class="text-center mb-5">Our Specialist Doctors</h2>
+
+        <div class="row g-4">
+
+            <!-- Cardiology -->
+            <div class="col-md-4">
+                <div class="card shadow">
+                    <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d"
+                        class="card-img-top doctor-img">
+                    <div class="card-body">
+                        <h5>Dr. Sarah Mitchell</h5>
+                        <p class="text-primary">Cardiologist</p>
+                        <p>Expert in heart disease treatment with 12+ years experience in cardiac surgery and preventive
+                            cardiology.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Neurology -->
+            <div class="col-md-4">
+                <div class="card shadow">
+                    <img src="https://images.unsplash.com/photo-1537368910025-700350fe46c7"
+                        class="card-img-top doctor-img">
+                    <div class="card-body">
+                        <h5>Dr. James Anderson</h5>
+                        <p class="text-primary">Neurologist</p>
+                        <p>Specialist in brain and nervous system disorders with advanced research background in stroke
+                            recovery.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pediatrics -->
+            <div class="col-md-4">
+                <div class="card shadow">
+                    <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2"
+                        class="card-img-top doctor-img">
+                    <div class="card-body">
+                        <h5>Dr. Emily Watson</h5>
+                        <p class="text-primary">Pediatrician</p>
+                        <p>Dedicated to child healthcare and neonatal care with over 10 years of pediatric experience.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Orthopedics -->
+            <div class="col-md-4">
+                <div class="card shadow">
+                    <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e"
+                        class="card-img-top doctor-img">
+                    <div class="card-body">
+                        <h5>Dr. Michael Brown</h5>
+                        <p class="text-primary">Orthopedic Surgeon</p>
+                        <p>Expert in bone, joint, and spine surgery with modern minimally invasive techniques.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gynecology -->
+            <div class="col-md-4">
+                <div class="card shadow">
+                    <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f"
+                        class="card-img-top doctor-img">
+                    <div class="card-body">
+                        <h5>Dr. Olivia Martinez</h5>
+                        <p class="text-primary">Gynecologist</p>
+                        <p>Women’s health specialist focusing on maternity care and reproductive health services.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Emergency Care -->
+            <div class="col-md-4">
+                <div class="card shadow">
+                    <img src="https://images.unsplash.com/photo-1580281657527-47b4aa5e0f73"
+                        class="card-img-top doctor-img">
+                    <div class="card-body">
+                        <h5>Dr. David Wilson</h5>
+                        <p class="text-primary">Emergency Specialist</p>
+                        <p>24/7 trauma and emergency expert trained in critical care and rapid response treatment.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container mt-5">
+                <h2 class="text-center mb-4">Book Appointment</h2>
+
+                <form id="appointmentForm" class="card p-4 shadow">
+
+                    <input type="text" id="name" class="form-control mb-3" placeholder="Full Name" required>
+                    <input type="email" id="email" class="form-control mb-3" placeholder="Email" required>
+                    <input type="tel" id="phone" class="form-control mb-3" placeholder="Phone" required>
+
+                    <select id="department" class="form-select mb-3" required>
+                        <option value="">Select Department</option>
+                        <option>Cardiology</option>
+                        <option>Neurology</option>
+                        <option>Pediatrics</option>
+                        <option>Orthopedics</option>
+                        <option>Gynecology</option>
+                    </select>
+                    <input type="date" id="date" class="form-control mb-3" required>
+                    <input type="time" id="time" class="form-control mb-3" required>
+
+                    <button class="btn btn-primary mt-2" type="submit">Submit Appointment</button>
+                    <button type="button" class="btn btn-success mt-2" id="printTokenBtn">Print Token & Bill</button>
+
+            </div>
+    </section>
+
+    </form>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

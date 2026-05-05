@@ -1,0 +1,50 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f7fa;
+}
+
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(13, 110, 253, 0.8), rgba(13, 110, 253, 0.8)),
+        url('https://images.unsplash.com/photo-1580281657527-47bdf3b08f55');
+    background-size: cover;
+    background-position: center;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+}
+
+form input,
+form select,
+form textarea {
+    border-radius: 10px;
+}
+
+button {
+    border-radius: 30px;
+}
+
+.hero-img {
+    height: 90vh;
+    object-fit: cover;
+    filter: brightness(60%);
+}
+
+.hero-caption {
+    bottom: 35%;
+}
+
+.hero-caption h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.hero-caption p {
+    font-size: 1.2rem;
+}
+
+.doctor-img {
+    height: 300px;
+    object-fit: cover;
+}
